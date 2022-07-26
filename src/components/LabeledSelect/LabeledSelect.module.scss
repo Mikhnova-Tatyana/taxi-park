@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  
+  select {
+    width: calc(180px + (374 - 180) * ((100vw - 360px) / (1920 - 360)));
+  }
+}

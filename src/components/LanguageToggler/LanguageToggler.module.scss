@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (max-width: 768px){
+    span {
+      display: none;
+    }
+  }
+  select {
+    text-transform: uppercase;
+    box-sizing: border-box;
+    width: 50px;
+    height: 32px;
+    padding: 8px;
+    border: 1px solid #C5C6CE;
+    border-radius: 8px;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url("../../assets/images/arow_down.svg") 95% center no-repeat;
+    outline: 0;
+  }
+}

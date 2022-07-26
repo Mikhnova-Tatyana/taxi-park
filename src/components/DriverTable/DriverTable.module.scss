@@ -1,0 +1,17 @@
+.driverTable {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.col1 {
+  width: 50px;
+}
+
+@media (max-width: 1199px) {
+  .col1 {
+    display: block;
+    padding-left: 50%;
+  }
+}

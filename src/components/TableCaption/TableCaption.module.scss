@@ -1,0 +1,26 @@
+.caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  h3 {
+    margin: 0;
+  }
+  &__title {
+    font-family: var(--font-family, sans-serif);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__total {
+    @extend .caption__title;
+    color: #8E91A0;
+    margin-left: 8px;
+  }
+  .addButton {
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+}

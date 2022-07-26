@@ -1,0 +1,42 @@
+.modal{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background: rgba(95, 99, 121, 0.2);
+
+  &.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content{
+    position: relative;
+    background: var(--color-white);
+    width: calc(330px + (608 - 330) * ((100vw - 360px) / (1920 - 360)));
+    box-shadow: 0px 0px 4px rgba(136, 136, 136, 0.24);
+    border-radius: 8px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 56px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #EEEEEE;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 72px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #EEEEEE;
+    } 
+  }
+}
